@@ -69,9 +69,6 @@
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
-}
-
-.theme-menu__button {
   transition: color 0.3s ease;
 }
 
@@ -88,7 +85,7 @@
   width: 100%;
 }
 
-.theme-menu__button:focus-visible  {
+.theme-menu__button:focus-visible {
   color: var(--hover-color);
 }
 
@@ -113,7 +110,7 @@
   animation: arrow 0.5s infinite ease-in-out alternate;;
 }
 
-@keyframes arrow{
+@keyframes arrow {
     0% {
       transform: translateX(0px);
     }
@@ -212,14 +209,11 @@ filter: sepia(80%);
   top: 25px;
   font-family: var(--PressStart2P-Regular);
   font-size: 14px;
-  font-weight: var(--text-font-weight);
+  font-variation-settings: "wght" var(--text-font-weight);
   color: var(--accent-color);
   mix-blend-mode: hard-light;
   opacity: 50%;
   text-transform: uppercase;
-}
-
-.card__img-text {
   text-shadow:
   -1px 0 var(--bg-color), 
   0 1px var(--bg-color), 

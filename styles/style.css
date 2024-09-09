@@ -209,7 +209,7 @@ filter: sepia(80%);
   top: 25px;
   font-family: var(--PressStart2P-Regular);
   font-size: 14px;
-  font-variation-settings: "wght" var(--text-font-weight);
+  font-weight: var(--text-font-weight);
   color: var(--accent-color);
   mix-blend-mode: hard-light;
   opacity: 50%;

@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--Inter-Variable), sans-serif;
-  font-variation-settings: var(--text-font-weight);
+  font-variation-settings: 'wght' var(--text-font-weight);
   background-color: var(--bg-color);
   color: var(--accent-color);
   background-image: var(--bg-image);
@@ -37,7 +37,7 @@
 
 .header__logo {
   font-family: var(--PressStart2P-Regular), sans-serif;
-  font-weight: var(--text-font-weight);
+  font-variation-settings: 'wght' var(--text-font-weight);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   color: var(--accent-color);
   text-transform: uppercase;
@@ -45,7 +45,7 @@
 
 .header__title {
   font-family: var(--PressStart2P-Regular), sans-serif;
-  font-weight: var(--text-font-weight);
+  font-variation-settings: 'wght' var(--text-font-weight);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   color: var(--accent-color);
   text-transform: uppercase;
@@ -63,7 +63,7 @@
   background-color: transparent;
   border: transparent;
   font-family: var(--PressStart2P-Regular);
-  font-weight: var(--text-font-weight);
+  font-variation-settings: 'wght' var(--text-font-weight);
   font-size: 14px;
   color: var(--accent-color);
   text-transform: uppercase;
@@ -142,7 +142,7 @@
 
 .card__title {
   font-family: var(--Inter-Variable);
-  font-weight: var(--title-font-weight);
+  font-variation-settings: 'wght' var(--title-font-weight);
   font-size: 18px;
   color: var(--accent-color);
 }
@@ -209,7 +209,7 @@ filter: sepia(80%);
   top: 25px;
   font-family: var(--PressStart2P-Regular);
   font-size: 14px;
-  font-weight: var(--text-font-weight);
+  font-variation-settings: 'wght' var(--text-font-weight);
   color: var(--accent-color);
   mix-blend-mode: hard-light;
   opacity: 50%;
@@ -236,7 +236,7 @@ filter: sepia(80%);
 
 .button__text {
   font-family: var(--PressStart2P-Regular);
-  font-weight: var(--text-font-weight);
+  font-variation-settings: 'wght' var(--text-font-weight);
   font-size: 14px;
   line-height: 0.9;
   position: relative;
@@ -434,7 +434,7 @@ filter: sepia(80%);
 .dialog-text {
   font-family: var(--PressStart2P-Regular);
   font-size: 14px;
-  font-weight: var(--text-font-weight);
+  font-variation-settings: 'wght' var(--text-font-weight);
   line-height: 1.5;
   text-transform: uppercase;
   color: var(--accent-color);

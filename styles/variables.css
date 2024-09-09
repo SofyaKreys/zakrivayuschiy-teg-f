@@ -1,1 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --Inter-Variable: 'Inter-Variable';
+    --PressStart2P-Regular: 'PressStart2P-Regular';
+    --text-font-weight: 400;
+    --title-font-weight: 700;
+    --accent-color: rgba(0, 0, 0, 1);
+    --bg-color: rgba(255, 255, 255, 1);
+    --bg-image: repeating-linear-gradient(to right, #d3d3d3 0px 2px, #d3d3d300 2px 4px),
+                repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, #d3d3d300 2px 4px),
+                linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --hover-color: rgba(0, 0, 0, 0.6);
+    --button-color: rgba(255, 255, 255, 1);
+    --color-icon-contour: rgba(0, 0, 0, 1);
+    --color-icon-main-body: rgba(255, 0, 0, 1);
+}

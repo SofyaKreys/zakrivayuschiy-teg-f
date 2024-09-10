@@ -150,7 +150,7 @@
   filter: invert(0.7);
 }
 
-.filter-brightness{
+.filter-brightness {
   filter: brightness(200%);
 }
 
@@ -294,7 +294,7 @@
 
 .core {
   fill: var(--color-icon-contour);
-  opacity: 0;  
+  opacity: 0;
 }
 
 .sparks {

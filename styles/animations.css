@@ -12,3 +12,186 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(0px);
+    }
+
+    100% {
+      transform: translateX(4px);
+    }
+}
+
+@keyframes text {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes increase {
+    0% {
+      transform: scale(1) ;
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    /* 50% {
+      opacity: 1;
+    } */
+    100% {
+      opacity: 1;
+    }
+}
+
+.card__like-button {
+    transition: box-shadow 0.3s ease;
+}
+
+.card__like-button:hover > .button__text {
+    animation: text .5s linear;
+}
+
+.card__like-button:focus-visible {
+    outline: none;
+    box-shadow: 2px 2px 0px 0px var(--accent-color);
+}
+  
+.card__icon-button {
+    transition: border 0.3s ease;
+}
+
+.card__icon-button:focus {
+    outline: transparent;
+}
+
+.card__icon-button:focus-visible {
+    border: var(--accent-color) solid 2px;
+    outline: transparent;
+}
+  
+.card__like-button::before {
+    transition: width 0.5s ease-in-out;
+}
+
+.like-icon.is-liked .heart {
+    animation: increase 0.3s ease-in 0.1s;
+    transform-origin: center;
+}
+
+.contour {
+    transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .contour {
+    transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .sparks {
+    animation: fadeIn 0.3s ease-in 0.3s 1 alternate;
+}
+
+.like-icon.is-liked .main-body {
+    transition: opacity 0.3s linear;
+}
+
+.like-icon.is-liked .core {
+    transition: opacity 0.3s linear;
+}
+
+.main-body {
+    transition: opacity 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+    opacity: 1;
+    transition: opacity 0.3s linear 0.05s;
+}
+
+.card__icon-button:active .main-body {
+    fill: var(--color-icon-main-body);
+    transition: fill 0.3s linear 0.05s;
+}
+
+.core {
+    transition: opacity 0.3s linear 0.03s;
+}
+
+.card__icon-button:hover .core {
+    opacity: 1;
+    transition: opacity 0.3s linear;
+}
+
+.card__icon-button:active .core {
+    fill: var(--color-icon-main-body);
+    transition: fill 0.3s linear;
+}
+
+.save__button {
+    transition: box-shadow 0.3s ease;
+}
+
+.save__button:focus-visible {
+    outline: none;
+    box-shadow: 2px 2px 0px 0px var(--accent-color);
+}
+
+/* .save__button:hover > .button__text {
+    animation: text .5s linear;
+} */
+
+/* .save__button:hover > .save__icon {
+    animation: text .5s linear;
+} */
+
+.save__button:hover::before {
+    width: 100%;
+}
+
+.save__button::before {
+    transition: width 0.5s ease-in-out;
+}
+
+.theme-menu__button:focus-visible::after {
+    width: 100%;
+}
+
+.theme-menu__button:focus-visible {
+    color: var(--hover-color);
+}
+
+.theme-menu__button:focus {
+    outline: none;
+}
+
+.theme-menu__button:hover {
+    color: var(--hover-color);
+}
+
+.theme-menu__button:disabled {
+    color: var(--hover-color);
+    pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+    animation: slideInFromLeft 0.5s infinite ease-in-out alternate;
+}
+
+.button__text {
+    transition: color 1s;
+}

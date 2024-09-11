@@ -63,6 +63,12 @@
 
 .main {
   margin: auto;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.main__cards {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,10 +149,10 @@
 .card__img {
   display: flex;
   position: relative;
-  max-inline-size: 700px;
+  /* max-inline-size: 700px;
   max-block-size: 700px;
   min-block-size: 375px;
-  min-inline-size: 375px;
+  min-inline-size: 375px; */
 }
 
 .filter-invert {
@@ -224,21 +230,17 @@
   white-space: nowrap;
 }
 
-.card__like-button {
+.button {
   position: relative;
   border: var(--accent-color) solid 2px;
   background-color: var(--bg-color);
-  align-self: flex-end;
   display: flex;
   flex-direction: row;
   align-items: center;
-  inline-size: 130px;
-  block-size: 38px;
-  justify-content: center;
   cursor: pointer;
 }
 
-.card__like-button::before {
+.button::before {
   content: '';
   position: absolute;
   left: 0px;
@@ -246,11 +248,31 @@
   width: 0%;
   height: 100%;
   background-color: var(--accent-color);
-  
 }
 
-.card__like-button:hover::before {
+.card__like-button {
+  align-self: flex-end;
+  inline-size: 130px;
+  block-size: 38px;
+  justify-content: center;
+}
+
+.save__button {
+  gap: 8px;
+  padding: 15px 20px;
+  margin: 0 34px 0;
+}
+
+.save .button::before {
+  top: 0px;
+}
+
+.dialog .button {
+  padding: 10px 17px;
   width: 100%;
+  margin: 0;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .card__button {
@@ -274,7 +296,6 @@
 }
 
 .like-icon.is-liked .contour {
-
   opacity: 1;
   fill: var(--color-icon-main-body);
 }
@@ -344,7 +365,7 @@
   background-color: rgb(0 0 0 / 0.75);
 } 
 
-.save__button {
+/* .save__button {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -355,16 +376,16 @@
   background-color: var(--bg-color);
   margin: 0 34px 0;
   cursor: pointer;
-}
+} */
 
-.dialog .save__button {
+/* .dialog .save__button {
   padding: 10px 17px;
   width: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-}
+} */
 
 .dialog[open] {
   display: flex;
@@ -379,6 +400,7 @@
   mix-blend-mode:difference;
 }
 
+/* 
 .save__button::before {
   content: '';
   position: absolute;
@@ -388,7 +410,7 @@
   width: 0%;
   height: 100%;
   background-color: var(--accent-color);
-}
+} */
 
 @media (width <= 375px) {
   .header {

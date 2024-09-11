@@ -180,8 +180,13 @@
     transition: fill 0.3s linear 0.06s;
 }
 
-.like-icon.is-liked .heart {
+/* .like-icon.is-liked .heart {
     animation: scaleUp 0.3s ease-in 0.1s alternate;
+    transform-origin: center;
+} */
+
+.like-icon.is-liked {
+    animation: scaleUp 0.3s ease-in 0.1s 1 alternate;
     transform-origin: center;
 }
 

@@ -109,17 +109,20 @@
   border: 2px solid var(--accent-color);
 }
 
-.card__titlearea {
+/* .card__titlearea {
   background-color: var(--bg-color);
   padding: 5px 10px;
   border-block-end: 2px solid var(--accent-color);
-}
+} */
 
 .card__title {
   font-family: var(--Inter-Variable), sans-serif;
   font-variation-settings: 'wght' var(--title-font-weight);
   font-size: 18px;
   color: var(--accent-color);
+  background-color: var(--bg-color);
+  padding: 5px 10px;
+  border-block-end: 2px solid var(--accent-color);
 }
 
 .card__img-decor {

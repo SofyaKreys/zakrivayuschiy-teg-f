@@ -355,7 +355,6 @@
   background-color: var(--bg-color);
   margin: 0 34px 0;
   cursor: pointer;
-  text-transform: uppercase;
 }
 
 .dialog .save__button {
@@ -364,6 +363,7 @@
   margin: 0;
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
 }
 
 .dialog[open] {

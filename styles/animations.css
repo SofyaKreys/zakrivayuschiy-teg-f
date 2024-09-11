@@ -23,7 +23,7 @@
     }
 }
 
-@keyframes text {
+@keyframes fadeInOut {
     0% {
       opacity: 1;
     }
@@ -35,7 +35,7 @@
     }
 }
 
-@keyframes increase {
+@keyframes scaleUp {
     0% {
       transform: scale(1) ;
     }
@@ -64,20 +64,24 @@
 }
 
 .card__like-button:hover > .button__text {
-    animation: text .5s linear;
+    animation: fadeInOut .5s linear;
 }
 
 .card__like-button:focus-visible {
     outline: none;
     box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
-  
+
+
+
+
+
 .card__icon-button {
     transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
-    outline: transparent;
+    outline: none;
 }
 
 .card__icon-button:focus-visible {
@@ -89,8 +93,12 @@
     transition: width 0.5s ease-in-out;
 }
 
+
+
+
+
 .like-icon.is-liked .heart {
-    animation: increase 0.3s ease-in 0.1s;
+    animation: scaleUp 0.3s ease-in 0.1s;
     transform-origin: center;
 }
 
@@ -107,7 +115,7 @@
 }
 
 .like-icon.is-liked .main-body {
-    transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear 0.03s;
 }
 
 .like-icon.is-liked .core {
@@ -142,6 +150,10 @@
     transition: fill 0.3s linear;
 }
 
+
+
+
+
 .save__button {
     transition: box-shadow 0.3s ease;
 }
@@ -149,6 +161,10 @@
 .save__button:focus-visible {
     outline: none;
     box-shadow: 2px 2px 0px 0px var(--accent-color);
+}
+
+.save__button:focus {
+    outline: none;
 }
 
 /* .save__button:hover > .button__text {
